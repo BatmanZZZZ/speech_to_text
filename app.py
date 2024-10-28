@@ -26,6 +26,11 @@ def start_recording():
     rate = 44100
     p = pyaudio.PyAudio()
 
+    # Check for available input devices
+    if p.get_device_count() == 0 or p.get_default_input_device_info() is None:
+        st.error("No audio input device found. Please check your microphone settings.")
+        return  # Exit the function if no input device is found
+
     stream = p.open(format=format, channels=channels, rate=rate, input=True, frames_per_buffer=chunk)
     st.session_state.audio_frames = []
 
