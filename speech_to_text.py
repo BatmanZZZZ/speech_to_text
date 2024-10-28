@@ -56,6 +56,7 @@ class SpeechToText:
 4. **Output Format**: Present the preprocessed text clearly and concisely.
 5. If the user's query is already preprocessed, you can skip this step and return the original query.
 6. Return question do not add prepocessed text prefix to the question. just plain question , not wrapped in any text.
+7. If audio text is empty then return empty string.
 **Domain Context**: Simpla specializes in providing comprehensive solutions for corporate tax compliance, including guidance on Value Added Tax (VAT), Corporate Tax (CT), and related regulations. They assist businesses in navigating the complexities of tax laws, ensuring compliance, and optimizing tax strategies.
 
 Example of Preprocessed query generation:
