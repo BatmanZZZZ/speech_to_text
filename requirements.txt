@@ -1,0 +1,10 @@
+langchain
+langchain_community 
+langchain_openai 
+langchain
+sentence_transformers
+langchain_openai
+openai
+PyAudio
+Wave
+streamlit
